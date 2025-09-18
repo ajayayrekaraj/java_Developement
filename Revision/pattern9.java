@@ -1,24 +1,27 @@
 package Revision;
-import java.util.*; 
-public class pattern7 {
+import java.util.*;
+public class pattern9 {
 	public static void main(String[]args) {
 		Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
-		int star=1;
+		int space=0;
 		int row=1;
+		int star=n;
+		
 		while(row<=n) {
-			int i=row;
-			while(i<n) {
-				System.out.print("  ");
-				i++;
-			}
 			int j=1;
-			while(j<=star) {
-				System.out.print("* ");
+			while(j<=space) {
+				System.out.print("  ");
 				j++;
 			}
-			star+=2;
+			int k=1;
+			while(k<=star) {
+				System.out.print("* ");
+				k++;
+			}
+			space+=2;
 			row++;
+			star--;
 			System.out.println();
 		}
 	}
