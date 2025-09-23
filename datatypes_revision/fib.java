@@ -13,6 +13,5 @@ public class fib {
 		two=sum;
 	}
 	System.out.println(one);
-	
 	}
 } 
